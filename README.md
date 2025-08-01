@@ -181,46 +181,46 @@ BuildKit هو نظام بناء حديث تم تقديمه من Docker لتحس�
   To delete all containers including its volumes use,
 
 
-<!--   To Search for Image  -->
-# docker search python or php or npm or java
-# docker search --filter is-official=true python or php or npm or java
+##  To Search for Image 
+### docker search python or php or npm or java
+### docker search --filter is-official=true python or php or npm or java
 
-<!-- You can find the min of starts  -->
-# docker search --filter stars=100  python or php or npm or java
-
-
-<!-- You can use this to search for automated Docker images of popular languages -->
-# docker search --filter is-automated=true python or php or npm or java
+## You can find the min of starts 
+### docker search --filter stars=100  python or php or npm or java
 
 
-<!-- List all Docker images for Python with full descriptions -->
-# docker search --format "{{.Name}}: {{.Description}}" --no-trunc python
+## You can use this to search for automated Docker images of popular languages
+### docker search --filter is-automated=true python or php or npm or java
 
 
-<!-- List all Docker images, including intermediate and unused ones -->
-# docker image ls --all
-
-<!-- List all Docker images with full output, avoiding truncation -->
-# docker image ls --no-trunc
-
-<!-- List all Docker images showing only their IDs -->
- # docker image ls --quiet
-
-<!-- List all Docker images along with their digests -->
-# docker image ls --digests
+## List all Docker images for Python with full descriptions
+### docker search --format "{{.Name}}: {{.Description}}" --no-trunc python
 
 
-<!-- Search Docker Hub for images with names starting with "python" -->
-# docker search python
+## List all Docker images, including intermediate and unused ones
+### docker image ls --all
 
-# List local images created before the 'python' image
-## docker image ls --filter before=python
+## List all Docker images with full output, avoiding truncation
+### docker image ls --no-trunc
 
-# List Docker images created after the 'python' image
-## docker image ls --filter since=python
+## List all Docker images showing only their IDs
+### docker image ls --quiet
 
-# List all dangling Docker images (untagged and unused)
-## docker image ls --filter dangling=true
+## List all Docker images along with their digests
+### docker image ls --digests
+
+
+## Search Docker Hub for images with names starting with "python"
+### docker search python
+
+## List local images created before the 'python' image
+### docker image ls --filter before=python
+
+## List Docker images created after the 'python' image
+### docker image ls --filter since=python
+
+## List all dangling Docker images (untagged and unused)
+### docker image ls --filter dangling=true
 
 
 
